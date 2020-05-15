@@ -1,0 +1,51 @@
+
+
+
+
+.autoComplete {
+  width: 100%;
+  border: 1px solid grey;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 2px 4px 1px rgba(0,0,0,.18);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: rgba(0,0,0,0.73);
+}
+
+.autoComplete input {
+  width: 100%;
+  border: none;
+  padding: 10px 5px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.App-Component {
+  margin: 150px auto 0 auto;
+  width: 600px;
+}
+
+.autoComplete ul {
+  list-style-type: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid grey;
+}
+
+.autoComplete ul::before {
+  content: '';
+}
+
+.autoComplete li {
+  padding: 10px 5px;
+  cursor: pointer;
+}
+
+.autoComplete li:hover {
+  
+  background-color: rgba(80,128,255,.2);
+}
+
+
+
+
