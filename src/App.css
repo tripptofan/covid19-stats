@@ -1,17 +1,226 @@
+@media only screen and (max-width: 800px){
+  body {
+    
+    margin:0 2% 0 !important;
+  }
+  div.App-Component{
+    width: 99%;
+    }
+  #globalStatsContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  #countryStatsContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  #statsLine{
+    margin:0 auto 0;
+    width: 60%;
+  }
+  div.globalStatsValue{
+    margin:0 auto .5em ;
+  }
+  div.globalStatsKey{
+    margin: .5em auto 0;
+  }
+  div.countryStatsKey{
+    margin: .5em auto 0;
+  }
+  div.countryStatsValue{
+    margin: 0 auto .5em;
+  }
+  #countryStatsTitle{
+    flex-direction: column;
+    
+  }
+  div.autoComplete{
+    position: relative;
+    margin: 1em auto auto;
+  }
+   
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+
+body{
+ 
+
+  background-color: rgb(30, 50,60);
+  margin: 2% 15% 100px;
+}
+
+
+
+
+h4 {
+text-align: left;
+margin: 1em 0 1em;
+font-family: 'Lora', serif;
+  font-size: 1em;
+  color: white;
+
+}
+
+hr {
+  color: white;
+  height: 2px;
+  background-color: white;
+  margin: 0 0 1em;
+}
+
+.statsLine{
+  color: white;
+  height: 2px;
+  background-color: white;
+  margin: 0 0 1em;
+}
+.longLines{
+  color: white;
+  height: 2px;
+  background-color: white;
+  margin: 1em 0 1em;
+}
+
+#titleBar{
+  display:flex;
+  justify-content: space-between;
+}
+#virus{
+  height: 30px;
+  margin: 0;
+}
+
+
+
+
+
+
+#world{
+  height: 40px;
+  margin: 0 .5em 0 0;
+}
+
+#globalTitle{
+  display: flex;
+  align-items: center;
+  color:  #FFF;
+  font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
+  margin:1em 0 .5em;
+}
+
+
+#globalStatsContainer{
+  margin:0;
+  font-family: 'Roboto', sans-serif;
+display: flex;
+justify-content: space-evenly;
+ background-color: rgba(255,255,255, .2);
+ padding: 25px;
+
+}
+
+.globalStatsPair {
+  display:flex;
+  flex-direction: column;
+  margin: auto 5px auto;
+}
+.globalStatsKey{
+  font-size: 1.5em;
+  display: flex;
+  margin: 5px auto auto;
+  color:  #FFF;
+  align-items: flex-start;
+}
+.globalStatsValue{
+  font-size:1.5em;
+  display: flex;
+  flex-direction: row;
+  margin: auto auto 5px;
+  color:  #FFF;
+  align-items: flex-end;
+  }
+
+
+
+  .countryStatsPair{
+    
+    display:flex;
+  flex-direction: column;
+  margin: auto 5px auto;
+  }
+#flagAndTitle{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+}  
+#countryStatsTitle{
+  display: flex;
+  
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  margin:1em 0 .5em;
+  color:  #FFF;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  
+ 
+}
+#countryStatsContainer{
+  justify-content: space-evenly;
+  font-family: 'Roboto', sans-serif;
+ 
+  display: flex;
+  
+  background-color: rgba(255,255,255, .2);
+ 
+  padding: 25px;
+
+}
+.countryStatsKey{
+  font-size: 1.5em;
+  display: flex;
+  margin: 5px auto auto;
+  color:  #FFF;
+  align-items: flex-start;
+}
+.countryStatsValue{
+  font-size:1.5em;
+  display: flex;
+  flex-direction: row;
+  margin: auto auto 5px;
+  color:  #FFF;
+  align-items: flex-end;
+}
+
+#flagImg{
+  margin: 0 .5em 0 0;
+}
 
 
 
 
 .autoComplete {
-  width: 100%;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 50%;
   border: 1px solid grey;
   box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 2px 4px 1px rgba(0,0,0,.18);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   color: rgba(0,0,0,0.73);
+  margin:  auto;
 }
 
 .autoComplete input {
+  
   width: 100%;
   border: none;
   padding: 10px 5px;
@@ -20,11 +229,15 @@
 }
 
 .App-Component {
-  margin: 150px auto 0 auto;
+  
+ 
+  margin: auto;
   width: 600px;
 }
 
 .autoComplete ul {
+  
+  background-color: white;
   list-style-type: none;
   text-align: left;
   margin: 0;
@@ -33,10 +246,13 @@
 }
 
 .autoComplete ul::before {
+ 
+  
   content: '';
 }
 
 .autoComplete li {
+  
   padding: 10px 5px;
   cursor: pointer;
 }
@@ -47,5 +263,30 @@
 }
 
 
+footer{
+  margin: 1em auto auto;
+  height: 200px;
+  
+}
 
+#footerLine{
+  
+  bottom: 0;
+  width: 100%;
+  
+ 
 
+}
+#footerText{
+  position: relative;
+  bottom: 0;
+  margin: 0;
+ 
+}
+.footerLink {
+  text-decoration: none;
+  color: gray;
+  font-family: 'monospace';
+  float: right;
+  
+}

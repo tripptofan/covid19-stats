@@ -2,12 +2,13 @@ import React, {useState} from 'react';
 import './App.css';
 
 
-const AutoComplete  = ({countryNames}) => {
+const AutoComplete  = ({countryStats,text, setText, countryDisplay}) => {
     
   const [suggestions, setSuggestions] = useState([]);
-  const [text, setText] = useState();
+  
 
     const onTextChanged = (e) => {
+        let countryNames = countryStats.map(c => c.Country)
         const value = e.target.value;
         if (value.length > 0) {
             const regex = new RegExp(`^${value}`, 'i');
@@ -19,12 +20,21 @@ const AutoComplete  = ({countryNames}) => {
         }
 
     }
+
+    
+
+
         return (
+<div>
+
             <div className='autoComplete'>
-                <input value={text} onChange={onTextChanged} type='text' />
+                <input value={text} onChange={onTextChanged} type='text'  onClick={() => setText('')}/>
                 <ul>
-                   {(suggestions.length === 0) ? null : suggestions.map(i => <li onClick={() => {setText(i); setSuggestions([])}}>{i}</li>)}
+                   {(suggestions.length === 0) ? null : suggestions.map(i => <li onClick={() => {setText('Search...'); setSuggestions([]); countryDisplay(i)}}>{i}</li>)}
                 </ul>
+                
+            </div>
+
             </div>
         )
     
